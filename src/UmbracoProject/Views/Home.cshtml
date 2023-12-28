@@ -1,0 +1,21 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Home>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@using Umbraco.Cms.Core.Models
+@{
+	Layout = null;
+}
+
+<h1>What's up fam?</h1>
+
+<p>Your name is: @Model.Value("yourName")</p>
+
+<p>You look like this:</p>
+
+@{
+    var typedMediaPickerSingle = Model.Value<MediaWithCrops>("yourImage");
+    if (typedMediaPickerSingle != null)
+    {
+        <img src="@typedMediaPickerSingle.MediaUrl()" style="width:200px" alt="@typedMediaPickerSingle.Value("alt")" />
+    }
+}

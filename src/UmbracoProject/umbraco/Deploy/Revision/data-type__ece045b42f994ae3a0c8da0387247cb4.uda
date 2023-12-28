@@ -1,0 +1,11 @@
+{
+  "Name": "Home - Name - Textbox",
+  "Alias": "",
+  "EditorAlias": "Umbraco.TextBox",
+  "DatabaseType": "Nvarchar",
+  "Configuration": {},
+  "Udi": "umb://data-type/ece045b42f994ae3a0c8da0387247cb4",
+  "Dependencies": [],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.DataTypeArtifact",
+  "__version": "13.0.1"
+}

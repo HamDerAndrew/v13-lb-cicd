@@ -6,8 +6,8 @@ on:
      - main
 
 env:
-  projectId: ${{ secrets.bed12a56-9723-46f1-8b3e-bfcca12ef223 }}
-  umbracoCloudApiKey: ${{ secrets.a5fc10ed8178435c8979d40b3cca6f24 }}
+  projectId: ${{ secrets.UMBRACO_CLOUD_PROJECT_ID }}
+  umbracoCloudApiKey: ${{ secrets.UMBRACO_CLOUD_API_KEY }}
 
 jobs:
 

@@ -23,7 +23,7 @@ jobs:
         shell: bash
 
       - name: Zip Source Code
-        run: zip -r sources.zip . -x ".git/*" ".github/*" "src/UmbracoProject/bin/*" "src/UmbracoProject/obj/*" "node_modules/*"
+        run: zip -r sources.zip . -x ".git/*" ".github/*" "src/V13LbCicd.Web/bin/*" "src/V13LbCicd.Web/obj/*" "node_modules/*"
         shell: bash
 
       - name: Post Zipped Artifact

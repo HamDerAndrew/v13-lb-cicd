@@ -1,6 +1,6 @@
 using Umbraco.Cms.Core.Sync;
 
-namespace UmbracoProject.ServerRoleAccessors;
+namespace V13LbCicd.Web.ServerRoleAccessors;
 
 public class SubscriberServerRoleAccessor : IServerRoleAccessor
 {

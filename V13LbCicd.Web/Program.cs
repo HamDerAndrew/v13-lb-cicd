@@ -1,4 +1,6 @@
+using Hangfire;
 using Umbraco.Cms.Infrastructure.DependencyInjection;
+using V13LbCicd.Web;
 using V13LbCicd.Web.ServerRoleAccessors;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
@@ -29,6 +31,11 @@ umbracoBuilder.Build();
 WebApplication app = builder.Build();
 
 await app.BootUmbracoAsync();
+
+if (builder.Environment.IsProduction())
+{
+    RecurringJob.AddOrUpdate<TvMazeUtility>("MoveTvShowsFromTvMazeToUmbraco", x => x.MoveTvShowsFromTvMazeToUmbraco(), Cron.Monthly);
+}
 
 app.UseHttpsRedirection();
 

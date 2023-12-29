@@ -1,0 +1,48 @@
+{
+  "Name": "Tv Show",
+  "Alias": "tvShow",
+  "AllowedTemplates": [],
+  "HistoryCleanup": {},
+  "Icon": "icon-item-arrangement",
+  "Thumbnail": "folder.png",
+  "Permissions": {
+    "AllowedChildContentTypes": []
+  },
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "0ddddaba-3c79-4637-960b-fbb35a0b5f02",
+      "Name": "Content",
+      "Alias": "content",
+      "PropertyTypes": [
+        {
+          "Key": "cddb5c0e-e30a-421e-8280-0a9012f3f82b",
+          "Alias": "thumbnail",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+          "Name": "Thumbnail",
+          "SortOrder": 1
+        },
+        {
+          "Key": "f0d79ec7-af6c-43c9-acc5-f77dc937b167",
+          "Alias": "TvShowId",
+          "DataType": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+          "Name": "Tv Show ID"
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/0e5d7020979043d5bd19432906b70ecd",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+      "Ordering": true
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "13.0.1"
+}

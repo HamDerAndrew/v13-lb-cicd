@@ -8,9 +8,12 @@
   "HistoryCleanup": {},
   "Icon": "icon-home color-light-blue",
   "Thumbnail": "folder.png",
+  "IsContainer": true,
   "Permissions": {
     "AllowedAtRoot": true,
-    "AllowedChildContentTypes": []
+    "AllowedChildContentTypes": [
+      "umb://document-type/0e5d7020979043d5bd19432906b70ecd"
+    ]
   },
   "CompositionContentTypes": [],
   "PropertyGroups": [
@@ -45,6 +48,9 @@
     {
       "Udi": "umb://data-type/ece045b42f994ae3a0c8da0387247cb4",
       "Ordering": true
+    },
+    {
+      "Udi": "umb://document-type/0e5d7020979043d5bd19432906b70ecd"
     },
     {
       "Udi": "umb://template/604cdf663c5b49e89bb3e12925c6fb7c",

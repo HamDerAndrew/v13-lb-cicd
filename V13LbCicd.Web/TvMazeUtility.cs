@@ -104,7 +104,7 @@ public class TvMazeUtility
             {
                 var media = ImportMediaFromTVMazeToUmbraco(show);
                 var newTvShow = _contentService.Create(show.Name, TvshowLibrary.Id, TvShow.ModelTypeAlias);
-                newTvShow.SetCultureName(show.Name, culture);
+                //newTvShow.SetCultureName(show.Name, culture);
                 newTvShow.SetValue(nameof(TvShow.TvShowId), show.Id);
 
                 if (media != null)
